@@ -17,4 +17,12 @@ public class TestCoche {
         coche.frenar(30);
         assertEquals(20,coche.getVelocidad());
     }
+
+    @Test
+    public void test_para_parar_del_todo() throws Exception{
+        Coche coche = new Coche();
+        coche.acelerar(50);
+        coche.parar();
+        assertEquals(0,coche.getVelocidad());
+    }
 }

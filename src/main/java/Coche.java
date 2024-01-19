@@ -13,4 +13,8 @@ public class Coche {
             velocidad=0;
         }
     }
+
+    public void parar() {
+        velocidad = 0;
+    }
 }
